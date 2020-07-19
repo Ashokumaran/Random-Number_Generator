@@ -1,7 +1,6 @@
 body{
     background-color: #eeeeee;
 }
-
 .design{
     font-family: 'Work Sans', sans-serif;
     font-size: 80pt;
@@ -18,4 +17,13 @@ button{
     font-family: 'Work Sans', sans-serif;
     font-size: 50pt;
     text-align: center;
+}
+@media screen and (max-width: 768px){
+    p{
+        font-size: 40pt;
+        line-height: 38pt;
+    }
+    .design{
+        font-size: 50pt;
+    }
 }
