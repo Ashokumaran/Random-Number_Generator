@@ -1,0 +1,21 @@
+body{
+    background-color: #eeeeee;
+}
+
+.design{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 80pt;
+    color: #0275d8;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60pt;
+    text-align: center;
+    line-height: 60pt;
+}
+button{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50pt;
+    text-align: center;
+}
