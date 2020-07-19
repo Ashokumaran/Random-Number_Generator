@@ -1,17 +1,34 @@
+var arr = [];
+var num;
 var generate = () => {
-    var str = "";
-    var n;
-    for(var i = 0; i < 8; i++)
+    let uniqueArray = [...new Set(arr)];
+    if(arr.length==0)
     {
-        n = Math.ceil((Math.random()*10)+1);
-        str += String(n);
+        num = Math.ceil(Math.random()*10);
+        if(num!=10)
+        {
+            arr.push(num);
+            generate();
+        }
+        else
+        generate();
     }
-    if(str.length==8)
+    else if(uniqueArray.length<8)
     {
-        document.getElementById("random").innerHTML = parseInt(str);
+        num = Math.floor(Math.random()*10);
+        if(num!=10)
+        {
+            arr.push(num);
+            generate();
+        }
+        else{
+            arr.push(0);
+            generate();
+        }
     }
     else
     {
-        generate();
+        document.getElementById('random').innerHTML = uniqueArray.join('');
+        arr = [];
     }
 }
